@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <rect x=0 y=0 width=300 height=300 fill="burlywood"/>
+            <!-- As a standalone svg, all x, y, width and height values should be in double quotes.-->
+            <path d="M 10 10 H 90 V 90 L 10 60" fill="transparent" stroke="black" stroke-width="3"/>
+          <circle cx=50 cy=50 r=20 class="svg-circle"/>
+            <g class="svg-text-group">
+              <text x="20" y="25" rotate="10" id="hello-text">Hello!</text>
+              <use href="#hello-text" x="-10" y="65" fill="white"/>
+            </g>
+        </svg>
+    <img
+    src="link.svg"
+    alt="a graph"
+    height="500"
+    width="500" />
+</div>
+</body>
+</html>
+
+<!-- SVG path description https://www.w3schools.com/graphics/svg_path.asp -->
+<!--
+M = moveto
+L = lineto
+H = horizontal lineto
+V = vertical lineto
+C = curveto
+S = smooth curveto
+Q = quadratic Bézier curve
+T = smooth quadratic Bézier curveto
+A = elliptical Arc
+Z = closepath
+
+M 150 0 means move to (150, 0)
+L75 200 means connect a line to (75, 200)
+Use Z to close a shape at the end.
+-->
